@@ -1,0 +1,846 @@
+
+
+
+
+    <div id="showinpopudiv" style="display:none"></div>
+<script type="text/javascript">
+    function checkAllSearchFields() {
+        $("form input:checkbox").prop('checked', true);
+    }
+
+    function uncheckAllSearchFields() {
+        $("form input:checkbox").prop('checked', false);
+    }
+    
+</script>
+
+				  
+        <div class="outer-north headerICD11RELEASE ui-layout-pane ui-layout-pane-north" style="position: absolute; margin: 0px; bottom: auto; width: auto; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); overflow: auto; top: 0px; left: 0px; right: 0px; height: 67px; display: block; visibility: visible;">
+	   
+            <div id="headerleft" style="height: 100%">
+			    
+        <h1>ICD-11 for Mortality and Morbidity Statistics</h1>
+        <span class="lfdetail">(Version : 04 / 2019)</span>
+        
+                
+    <div id="searchcontainer">
+
+Search 
+<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input class="search ui-autocomplete-input" id="searchbox" data-searchtype="full" type="text" autocomplete="off">
+<img class="searchwait" src="/browse11/Content/load.gif">
+
+
+        <span id="imagebutton_2e8ffa92-3cec-4b2d-931a-efb3389b424bquicksearch" title="Help" class="helpbutton helpbuttonICD11RELEASE" onclick="Helper.popupContent('2e8ffa92-3cec-4b2d-931a-efb3389b424bquicksearch','Help')">
+                &nbsp;
+            </span>
+    <div id="content_2e8ffa92-3cec-4b2d-931a-efb3389b424bquicksearch" class="hiddenhelp">
+        <div class="help" autofocus="true">
+            
+            
+
+<h2>Quick Search Help</h2>
+
+<p>
+    <img class="dropshadow" alt="quicksearch image" src="/browse11/Content/helpfiles.ICD11_en//images/quicksearch.png"></p>
+<p>
+    Quick search helps you quickly navigate to a particular category. 
+    It searches the titles, inclusions, synonyms and narrower terms and it works by starting to search as you type and 
+    provide you options in a dynamic dropdown list.
+</p>
+<p>
+  Clicking on one of the entities that appear in the list will load the entity.</p>
+
+<p> The results are sorted by how good the text entered matches the phrase in ICD. 
+    It is also grouped by using the ICD hierarchy so that if the search text matches a parent category and several children,
+    they will appear in a fashion that is easy to identify this relation visually. The list shows only the titles or the 
+    best match among the matched terms if the title is not a match. However, <span class="detailsicon">▤</span>
+    button will make more matching results visible under the entity.</p>
+
+<p>
+    You may also use wildcards to find similar words or to simply save some 
+    typing.
+
+    For example, <strong>transp* accident </strong>will find entities with 
+    transport and accident</p>
+
+
+        
+        </div>
+    </div>
+ 
+
+            <a class="buttonLike" id="advancedSearchButton">
+                [
+                Advanced Search
+                ]
+            </a>
+    </div>
+
+                
+            </div>
+            <div class="toplogbuttons">
+                
+    
+            </div>
+            
+               <div style="display:none" id="notificationdomainsarea"></div>
+        </div>
+<div id="menu">
+<ul class="tabs">
+	
+            <li><a id="mainmenu-Browse" href="/browse11/l-m/en" title="ICD-11 - Mortality and Morbidity Statistics">
+                Browse
+                </a>
+           
+            </li>
+            <li><a id="mainmenu-Coding_Tool" href="https://icd.who.int/ct11_2018/icd11_mms/en/release" title="Coding Tool (ICD-11 - Mortality and Morbidity Statistics" target="_blank">
+                Coding Tool
+                </a>
+           
+
+
+        <span id="imagebutton_b3f92496-5428-4dc4-a933-6f87a4a69136codingtool" title="Help" class="helpbutton helpbuttonICD11RELEASE" onclick="Helper.popupContent('b3f92496-5428-4dc4-a933-6f87a4a69136codingtool','Help')">
+                &nbsp;
+            </span>
+    <div id="content_b3f92496-5428-4dc4-a933-6f87a4a69136codingtool" class="hiddenhelp">
+        <div class="help" autofocus="true">
+            
+            
+
+
+<h3>The Coding Tool</h3>
+
+<p>
+    ICD-11 Coding Tool is a software to help the users of coding with ICD-11
+ </p>
+<p>
+
+   </p><p> There are some differences in the way searching is performed between the Coding Tool and the ICD-11 Browser</p>
+<ul>
+    <li>
+        The browser search may give you results that are groupings (or blocks) in addition to entities with codes. However, the coding tool only gives results that have codes by design.
+    </li>
+    <li>
+        Browser has the advanced search feature which allows you select what to search (i.e. you may search exclusions, definitions, etc.) whereas the coding tool searches only the index including the titles.
+    </li>
+    <li>
+        Coding tool has word completion and word suggestion.
+    </li>
+    <li>
+        Coding tool has chapter filtering feature which by default filters out the “Extension Codes” and the “Traditional Medicine”.
+    </li>
+</ul>
+
+        
+        </div>
+    </div>
+            </li>
+            <li class="hasmore" id="pmenu_Special_Views"><a title=""><span>Special Views</span></a>
+		     <ul class="dropdown">
+                         <li><a id="submenu-Special_tabulation_list_of_infectious_agents" href="/browse11/l-m_st_infections/en" title="" class="indent">
+                                 Special tabulation list of infectious agents
+                             </a>
+                         </li>
+             </ul>
+            </li>
+            <li class="hasmore" id="pmenu_Info"><a title=""><span>Info</span></a>
+		     <ul class="dropdown">
+                         <li><a id="submenu-User_Guide" href="/browse11/Help/en" title="User Guide for the ICD11 browser">
+                                 User Guide
+                             </a>
+                         </li>
+                         <li><a id="submenu-Print_Versions" href="/browse11/Downloads/Download?fileName=print_en.zip" title="" target="_blank">
+                                 Print Versions
+                             </a>
+                         </li>
+                         <li><a id="submenu-ICD-11_Reference_Guide" href="https://icd.who.int/icd11refguide/en/index.html" title="ICD-11 Reference Guide" target="_blank">
+                                 ICD-11 Reference Guide
+                             </a>
+                         </li>
+                         <li><a id="submenu-Spreadsheet_File" href="/browse11/Downloads/Download?fileName=simpletabulation.zip" title="Simple Tabulation" target="_blank">
+                                 Spreadsheet File
+                             </a>
+                         </li>
+                         <li><a id="submenu-ICD-10___ICD-11_mapping_Tables" href="/browse11/Downloads/Download?fileName=mapping.zip" title="" target="_blank">
+                                 ICD-10 / ICD-11 mapping Tables
+                             </a>
+                         </li>
+                         <li><a id="submenu-ICD-11_Maintenance,_Contributions,_Proposals" href="https://icd.who.int/dev11" title="" target="_blank">
+                                 ICD-11 Maintenance, Contributions, Proposals
+                             </a>
+
+
+        <span id="imagebutton_907f8061-f9fb-480f-a513-9109daf74e90livebrowser" title="Help" class="helpbutton helpbuttonICD11RELEASE" onclick="Helper.popupContent('907f8061-f9fb-480f-a513-9109daf74e90livebrowser','Help')">
+                &nbsp;
+            </span>
+    <div id="content_907f8061-f9fb-480f-a513-9109daf74e90livebrowser" class="hiddenhelp">
+        <div class="help" autofocus="true">
+            
+            
+
+
+<h3>ICD-11 Maintenance Platform</h3>
+
+<p>
+    The ICD maintenance process allows the continuous adaptation of the ICD following the evolution in the understanding of diseases, 
+    treatments, and prevention. A proposal and review mechanism on an online platform makes the process transparent.
+
+    This platform allows users see the suggested updates, make change proposals or correction suggestions.
+    In addition we provide a mechanism to contibute to the translations of ICD-11.
+
+</p>
+
+<p>
+    The browser contained in the maintenance platform (with the orange background) is mainly for the contributors of the classification development and it has the following differences
+    </p><ul>
+        <li>
+            It shows the current work in progress. I.e. it may contain content that is not released and may change before releasing. Therefore it should not be used for coding cases
+        </li>
+        <li>It shows the ICD-11 foundation as well as the several linearizations including the ICD-11 for mortality morbidty statistics (MMS)</li>
+        <li>It has features for facilitating contribution such as commenting and the proposal mechanism</li>
+        <li>It contains a translation tool to aid the translations</li>
+    </ul>
+
+<p></p>
+        
+        </div>
+    </div>
+                         </li>
+                         <li><a id="submenu-ICD_Home_Page" href="http://www.who.int/classification/icd" title="" target="_blank">
+                                 ICD Home Page
+                             </a>
+                         </li>
+             </ul>
+            </li>
+</ul>
+
+</div>
+
+
+
+    <div id="langarea">
+        <div id="langbutton">
+            <img id="mlimg" alt="language change icon" src="/browse11/Content/globe.svg">
+            EN
+        </div>
+        <ul id="languagelist">
+                <li>
+                        <span class="languageselected">
+                            <span class="selstatus">✓</span>
+                            English
+                        </span>
+                </li>
+                <li>
+                    <a href="/browse11/l-m/es" class="languageswitch">  
+                       <span class="selstatus"></span>
+                        Spanish 
+                    </a>
+                </li>
+        </ul>
+        
+    </div>
+        <div class="outer-center ui-layout-pane ui-layout-pane-center ui-layout-container" id="xx" style="position: absolute; margin: 0px; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); top: 85px; bottom: 0px; left: 452px; right: 0px; width: 348px; height: 515px; display: block; visibility: visible; overflow: hidden;">
+             <div class="inner-center ui-layout-pane ui-layout-pane-center ui-layout-container" style="position: absolute; margin: 0px; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); top: 0px; bottom: 0px; left: 0px; right: 0px; width: 348px; height: 515px; display: block; visibility: visible; overflow: hidden;">
+            <div class="inner2-center details ui-layout-pane ui-layout-pane-center" id="firstright" style="position: absolute; margin: 0px; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); overflow: auto; top: 0px; bottom: 0px; left: 0px; right: 0px; width: 326px; height: 493px; display: block; visibility: visible;">
+                <img id="conceptdetailswaitimg" alt="waiting" style="display: none; float: right" src="/browse11/Content/wait.gif">
+                <div class="initialpageRight">
+                    
+     
+        
+
+<h3 class="page_heading1">
+    ICD-11 for Mortality and Morbidity Statistics (ICD-11 MMS) <br> 2018 version
+</h3>
+
+
+Version for preparing implementation
+
+
+<h3 class="page_heading">
+    Release Notes
+</h3>
+
+<ul>
+    <li>
+        The code structure for the ICD-11 MMS is stable. 
+    </li>
+    <li>
+        Updating mechanism is in place, based on the proposals submitted on the <a href="https://icd.who.int/dev11">maintenance platform </a>
+    </li>
+
+</ul>
+
+    
+    
+
+                 </div>
+                <div class="inner-east details" id="secondright">
+            </div>
+            </div>
+                <div class="inner2-south ui-layout-pane ui-layout-pane-south" id="searchResultPane" style="position: absolute; margin: 0px; top: auto; width: auto; z-index: 0; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); overflow: hidden; padding: 0px; bottom: 0px; left: 0px; right: 0px; height: 298px; display: none; visibility: visible;">
+                
+
+<div class="tableWrapper ui-widget ui-widget-header  ui-dialog-title" style="font-size:0.75em;">
+ 
+    <table style="width:100%; table-layout:fixed">
+        <tbody><tr><td>
+     <span class="ui-dialog-title">
+         Search Results </span>
+         <span class="ui-icon close" style="background-position: -96px -128px; float:right;cursor:pointer" title="Close search results. (It will reopen when you make another advanced search)">close</span>
+          </td></tr>
+
+        </tbody></table>
+     </div>
+    
+<img class="searchresultwaitimg" alt="waiting" src="/browse11/Content/waitbig.gif">
+
+<div class="searchResultDiv data tableWrapper" style="height: 100%; position: relative; overflow: auto; padding: 10px;">
+    <div class="innerWrapper">
+        <table style="width:100%; table-layout:fixed">
+
+        </table>
+    </div>
+</div>
+
+ 
+            </div>
+              <div title="Slide Open" id="" class="ui-layout-resizer ui-layout-resizer-south ui-layout-resizer-closed ui-layout-resizer-south-closed ui-draggable-disabled" aria-disabled="true" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; background: rgb(221, 221, 221); border: none; bottom: 0px; cursor: pointer; display: none; width: 348px; height: 2px; left: 0px;"><div id="" class="ui-layout-toggler ui-layout-toggler-south ui-layout-toggler-closed ui-layout-toggler-south-closed" title="Open" style="position: absolute; display: none; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; z-index: 1; background: rgb(170, 170, 170); visibility: visible; cursor: pointer;"></div></div></div>   
+             <div class="inner-west details ui-layout-pane ui-layout-pane-west" style="position: absolute; margin: 0px; right: auto; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); overflow: auto; left: 0px; width: 828px; top: 0px; bottom: 0px; height: 493px; display: none; visibility: visible;">
+            
+      
+   
+
+            </div>
+        <div title="Slide Open" id="" class="ui-layout-resizer ui-layout-resizer-west ui-layout-resizer-closed ui-layout-resizer-west-closed ui-draggable-disabled" aria-disabled="true" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; background: rgb(221, 221, 221); border: none; left: 0px; cursor: pointer; display: none; height: 515px; width: 2px; top: 0px;"></div></div>
+	   
+        <div class="outer-west details ui-layout-pane ui-layout-pane-west" style="position: absolute; margin: 0px; right: auto; z-index: 0; padding: 10px; background: rgb(255, 255, 255); border: 1px solid rgb(187, 187, 187); overflow: auto; left: 0px; width: 428px; top: 85px; bottom: 0px; height: 493px; display: block; visibility: visible;">
+            
+    
+<div id="mainhiearchydiv">
+<div class="topicons2">    
+    <div class="fx">
+                 <span id="fchld" class="sidebutton on" alt="toggle displaying foundation children that are located elsewhere in the classification (gray children)" title="toggle displaying foundation children that are located elsewhere in the classification (gray children)" onclick="OBrowserNavigation.getInstance().toggleAdoptedChildren()"></span>
+        
+
+        <img class="sidebutton" alt="collapse all nodes" title="collapse all nodes" src="/browse11/Content/collapse.png" onclick="OBrowserNavigation.getInstance().theHierarchy.collapseTree()">
+
+    </div>
+
+</div>
+    <div id="hierarchy" class="ygtv-highlight "><div class="ygtvitem" id="ygtv0"><div class="ygtvchildren" id="ygtvc0"><div class="ygtvitem" id="ygtv1"><table id="ygtvtableel1" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth0 ygtv-expanded ygtv-highlight0"><tbody><tr class="ygtvrow"><td id="ygtvt1" class="ygtvcell ygtvlm"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel1" class="ygtvcell ygtvhtml ygtvcontent"><a class="ygtvlabel" data-id="root">ICD-11 - Mortality and Morbidity Statistics</a></td></tr></tbody></table><div class="ygtvchildren" id="ygtvc1" style=""><div class="ygtvitem" id="ygtv2"><table id="ygtvtableel2" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt2" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel2" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1435254666">
+
+    
+
+
+        <span class="icode ">01</span>
+Certain infectious or parasitic diseases
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc2" style="display:none;"></div></div><div class="ygtvitem" id="ygtv3"><table id="ygtvtableel3" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt3" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel3" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1630407678">
+
+    
+
+
+        <span class="icode ">02</span>
+Neoplasms
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc3" style="display:none;"></div></div><div class="ygtvitem" id="ygtv4"><table id="ygtvtableel4" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt4" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel4" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1766440644">
+
+    
+
+
+        <span class="icode ">03</span>
+Diseases of the blood or blood-forming organs
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc4" style="display:none;"></div></div><div class="ygtvitem" id="ygtv5"><table id="ygtvtableel5" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt5" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel5" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1954798891">
+
+    
+
+
+        <span class="icode ">04</span>
+Diseases of the immune system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc5" style="display:none;"></div></div><div class="ygtvitem" id="ygtv6"><table id="ygtvtableel6" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt6" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel6" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/21500692">
+
+    
+
+
+        <span class="icode ">05</span>
+Endocrine, nutritional or metabolic diseases
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc6" style="display:none;"></div></div><div class="ygtvitem" id="ygtv7"><table id="ygtvtableel7" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt7" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel7" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/334423054">
+
+    
+
+
+        <span class="icode ">06</span>
+Mental, behavioural or neurodevelopmental disorders
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc7" style="display:none;"></div></div><div class="ygtvitem" id="ygtv8"><table id="ygtvtableel8" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt8" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel8" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/274880002">
+
+    
+
+
+        <span class="icode ">07</span>
+Sleep-wake disorders
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc8" style="display:none;"></div></div><div class="ygtvitem" id="ygtv9"><table id="ygtvtableel9" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt9" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel9" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1296093776">
+
+    
+
+
+        <span class="icode ">08</span>
+Diseases of the nervous system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc9" style="display:none;"></div></div><div class="ygtvitem" id="ygtv10"><table id="ygtvtableel10" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt10" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel10" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/868865918">
+
+    
+
+
+        <span class="icode ">09</span>
+Diseases of the visual system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc10" style="display:none;"></div></div><div class="ygtvitem" id="ygtv11"><table id="ygtvtableel11" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt11" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel11" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1218729044">
+
+    
+
+
+        <span class="icode ">10</span>
+Diseases of the ear or mastoid process
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc11" style="display:none;"></div></div><div class="ygtvitem" id="ygtv12"><table id="ygtvtableel12" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt12" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel12" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/426429380">
+
+    
+
+
+        <span class="icode ">11</span>
+Diseases of the circulatory system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc12" style="display:none;"></div></div><div class="ygtvitem" id="ygtv13"><table id="ygtvtableel13" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt13" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel13" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/197934298">
+
+    
+
+
+        <span class="icode ">12</span>
+Diseases of the respiratory system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc13" style="display:none;"></div></div><div class="ygtvitem" id="ygtv14"><table id="ygtvtableel14" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt14" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel14" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1256772020">
+
+    
+
+
+        <span class="icode ">13</span>
+Diseases of the digestive system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc14" style="display:none;"></div></div><div class="ygtvitem" id="ygtv15"><table id="ygtvtableel15" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt15" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel15" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1639304259">
+
+    
+
+
+        <span class="icode ">14</span>
+Diseases of the skin
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc15" style="display:none;"></div></div><div class="ygtvitem" id="ygtv16"><table id="ygtvtableel16" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt16" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel16" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1473673350">
+
+    
+
+
+        <span class="icode ">15</span>
+Diseases of the musculoskeletal system or connective tissue
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc16" style="display:none;"></div></div><div class="ygtvitem" id="ygtv17"><table id="ygtvtableel17" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt17" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel17" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/30659757">
+
+    
+
+
+        <span class="icode ">16</span>
+Diseases of the genitourinary system
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc17" style="display:none;"></div></div><div class="ygtvitem" id="ygtv18"><table id="ygtvtableel18" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt18" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel18" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/577470983">
+
+    
+
+
+        <span class="icode ">17</span>
+Conditions related to sexual health
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc18" style="display:none;"></div></div><div class="ygtvitem" id="ygtv19"><table id="ygtvtableel19" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt19" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel19" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/714000734">
+
+    
+
+
+        <span class="icode ">18</span>
+Pregnancy, childbirth or the puerperium
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc19" style="display:none;"></div></div><div class="ygtvitem" id="ygtv20"><table id="ygtvtableel20" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt20" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel20" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1306203631">
+
+    
+
+
+        <span class="icode ">19</span>
+Certain conditions originating in the perinatal period
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc20" style="display:none;"></div></div><div class="ygtvitem" id="ygtv21"><table id="ygtvtableel21" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt21" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel21" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/223744320">
+
+    
+
+
+        <span class="icode ">20</span>
+Developmental anomalies
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc21" style="display:none;"></div></div><div class="ygtvitem" id="ygtv22"><table id="ygtvtableel22" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt22" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel22" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1843895818">
+
+    
+
+
+        <span class="icode ">21</span>
+Symptoms, signs or clinical findings, not elsewhere classified
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc22" style="display:none;"></div></div><div class="ygtvitem" id="ygtv23"><table id="ygtvtableel23" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt23" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel23" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/435227771">
+
+    
+
+
+        <span class="icode ">22</span>
+Injury, poisoning or certain other consequences of external causes
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc23" style="display:none;"></div></div><div class="ygtvitem" id="ygtv24"><table id="ygtvtableel24" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt24" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel24" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/850137482">
+
+    
+
+
+        <span class="icode ">23</span>
+External causes of morbidity or mortality
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc24" style="display:none;"></div></div><div class="ygtvitem" id="ygtv25"><table id="ygtvtableel25" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt25" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel25" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1249056269">
+
+    
+
+
+        <span class="icode ">24</span>
+Factors influencing health status or contact with health services
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc25" style="display:none;"></div></div><div class="ygtvitem" id="ygtv26"><table id="ygtvtableel26" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt26" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel26" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/1596590595">
+
+    
+
+
+        <span class="icode ">25</span>
+Codes for special purposes
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc26" style="display:none;"></div></div><div class="ygtvitem" id="ygtv27"><table id="ygtvtableel27" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt27" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel27" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/718687701">
+
+    
+
+
+        <span class="icode ">26</span>
+Supplementary Chapter Traditional Medicine Conditions - Module I
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc27" style="display:none;"></div></div><div class="ygtvitem" id="ygtv28"><table id="ygtvtableel28" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt28" class="ygtvcell ygtvtp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel28" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/231358748">
+
+    
+
+
+        <span class="icode ">V</span>
+Supplementary section for functioning assessment
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc28" style="display:none;"></div></div><div class="ygtvitem" id="ygtv29"><table id="ygtvtableel29" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth1 ygtv-collapsed ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvblankdepthcell"><div class="ygtvspacer"></div></td><td id="ygtvt29" class="ygtvcell ygtvlp"><a href="#" class="ygtvspacer">&nbsp;</a></td><td id="ygtvcontentel29" class="ygtvcell ygtvhtml ygtvcontent">
+<a class="ygtvlabel  " data-id="http://id.who.int/icd/entity/979408586">
+
+    
+
+
+        <span class="icode ">X</span>
+Extension Codes
+
+    
+
+</a>&nbsp;
+
+</td></tr></tbody></table><div class="ygtvchildren" id="ygtvc29" style="display:none;"></div></div></div></div></div></div></div>
+
+</div>
+
+ 
+
+        </div>
+      
+        
+    
+
+
+<div id="" class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-open ui-layout-resizer-north-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; background: rgb(221, 221, 221); border: none; top: 85px; cursor: default; display: none;"></div><div id="" class="ui-layout-resizer ui-layout-resizer-west ui-layout-resizer-open ui-layout-resizer-west-open" title="Resize" aria-disabled="false" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; background: rgb(221, 221, 221); border: none; left: 450px; cursor: w-resize; height: 515px; width: 2px; top: 85px;"></div><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="advancedSearchBox" aria-labelledby="ui-id-2" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">[ Advanced Search ]</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="advancedSearchBox" class="advancedsearch ui-dialog-content ui-widget-content" style="display: block;">
+
+
+        <form id="advancedSearchForm" method="post" novalidate="novalidate">
+
+        Search Text :
+                   <span style="float:right;margin-right:-12px;margin-bottom:2px">
+            
+
+        <span id="imagebutton_08d2533b-6d7c-4b45-9bdf-1c7a7cea0c57advancedsearch" title="Help" class="helpbutton helpbuttonICD11RELEASE" onclick="Helper.popupContent('08d2533b-6d7c-4b45-9bdf-1c7a7cea0c57advancedsearch','Help')">
+                &nbsp;
+            </span>
+    <div id="content_08d2533b-6d7c-4b45-9bdf-1c7a7cea0c57advancedsearch" class="hiddenhelp">
+        <div class="help" autofocus="true">
+            
+            
+
+<h2>Advanced Search Help</h2>
+
+<p>
+    <img class="dropshadow" alt="Advanced search help image" src="/browse11/Content/helpfiles.ICD11_en//images/advancedsearch1.png"></p>
+<p>
+
+    Advanced search lets you search selected properties of the classification. You 
+    could search all properties or a selected subset only</p>
+<p>
+
+    Please 
+    provide keywords in the <strong>Search Text</strong> field and check the 
+    properties that you'd like to include in the search.</p>
+<p>
+
+    The system will search for the keywords in the properties that 
+    you've checked </p>
+
+
+<p>
+    The results are sorted by how good the text entered matches the phrase in ICD.
+    It is also grouped by using the ICD hierarchy so that if the search text matches a parent category and several children,
+    they will appear in a fashion that is easy to identify this relation visually. The list shows only the titles or the
+    best match among the matched terms if the title is not a match. However, <span class="detailsicon">▤</span>
+    button will make more matching results visible under the entity.
+</p>
+
+    <p>If the search query hits more than 200 results, then only the top 200 will be 
+    displayed.</p>
+<p>
+
+    If you provide more than one keyword, the system will 
+    search for items that have all the keywords.</p>
+
+<p>
+
+    <strong>Wildcards:</strong>
+
+    You may also use wildcard character *</p>
+<p>
+
+    For example, searching  <b>diabet*</b> finds all entities that have a word that start with 
+    "diabet" </p>
+
+<h4>Search Results</h4>
+<p>
+    <img class="dropshadow" alt="Advanced search help image" src="/browse11/Content/helpfiles.ICD11_en//images/advancedsearch2.png"></p>
+<p>
+</p><p>After the search the results are displayed at the lower right area of the screen. Clicking on any result will load that entity</p>
+<p>You may close the <b>Advanced Search</b> window or the <b>Search Results</b> pane by clicking the X at the top left corner of the 
+    window.</p>
+
+        
+        </div>
+    </div>
+ 
+                </span>
+            <input autocomplete="off" class="advancedSearchTextBox" id="SearchText" name="SearchText" type="text" value="">
+
+     
+        <br>
+        
+            <span style="font-style:italic">
+                Please check the properties that you'd like to include in the search
+            </span>
+        <div style="float: right">
+            <span class="buttonLike" onclick="checkAllSearchFields(); ">
+                [ 
+                Check All  
+                ]
+            </span> 
+            &nbsp;&nbsp;&nbsp;
+            <span class="buttonLike" onclick="uncheckAllSearchFields(); ">
+                [ 
+                Uncheck All
+                ]
+            </span>   
+        </div>
+        <br>
+            <div class="advsearchpropertiesdiv" style="max-height: 360px;">
+                <div class="advsearchpropertiesdivLeft">
+
+<input checked="checked" id="Search_Title" name="Search_Title" type="checkbox" value="true"><input name="Search_Title" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_Title')">
+                            Title
+                        </span>
+                        <br>
+<input id="Search_Synonym" name="Search_Synonym" type="checkbox" value="true"><input name="Search_Synonym" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_Synonym')">
+                            Synonym
+                        </span>
+                        <br>
+<input id="Search_NarrowerTerm" name="Search_NarrowerTerm" type="checkbox" value="true"><input name="Search_NarrowerTerm" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_NarrowerTerm')">
+                            Narrower Term
+                        </span>
+                        <br>
+<input id="Search_Definition" name="Search_Definition" type="checkbox" value="true"><input name="Search_Definition" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_Definition')">
+                            Description
+                        </span>
+                        <br>
+<input id="Search_Inclusion" name="Search_Inclusion" type="checkbox" value="true"><input name="Search_Inclusion" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_Inclusion')">
+                            Inclusion
+                        </span>
+                        <br>
+<input id="Search_Exclusion" name="Search_Exclusion" type="checkbox" value="true"><input name="Search_Exclusion" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_Exclusion')">
+                            Exclusion
+                        </span>
+                        <br>
+<input id="Search_IndexTerm" name="Search_IndexTerm" type="checkbox" value="true"><input name="Search_IndexTerm" type="hidden" value="false">                        <span class="advsearchptext" onclick="OBrowserNavigation.getInstance().theSearcher.onTextClick('Search_IndexTerm')">
+                            Index Term
+                        </span>
+                        <br>
+
+                </div>
+                <div class="advsearchpropertiesdivRight">
+
+
+                </div>
+                </div>
+
+                
+
+
+</form>
+
+</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Search</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="messageArea" aria-labelledby="ui-id-3" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-3" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="messageArea" class="ui-dialog-content ui-widget-content"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ok</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
