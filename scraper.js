@@ -87,18 +87,14 @@ async function saveDataAsJSON(data, filename) {
 async function open_tree({page, root, root_id, cat_id=null}) {
     var label_txt = await get_label(page, root);
     var num_objs = Object.keys(diseases['data']).length;
-    if (num_objs > 0 && num_objs % 100 == 0) {
+    if (num_objs > 0 && num_objs % 10 == 0) {
         await saveDataAsJSON(diseases, 'icd11.json');
     }
-    console.log("Cat IS: " +  cat_id +  " Item " + num_objs + " ===> Tree -> " + label_txt);
+    console.log("Cat IS: " +  cat_id +  " Item " + Object.keys(diseases['data']).length + " ===> Tree -> " + label_txt);
     var has_dropdown = await page.evaluate(
         el => el ? true : false,
-        await root.$('table > tbody > tr > td > a.ygtvspacer:not(.adopted)')
+        await root.$('table td a.ygtvspacer:not(.adopted)')
     );
-    // var root_path = await page.evaluate(
-    //     el => getDomPath(el),
-    //     root.$('table td a.ygtvspacer')
-    // );
     if (has_dropdown) {
         var has_children = await page.evaluate(
             el => el ? true : false,
@@ -108,7 +104,7 @@ async function open_tree({page, root, root_id, cat_id=null}) {
         if (!has_children) {
             await page.evaluate(
                 el => el.click(),
-                await root.$('table > tbody > tr > td > a.ygtvspacer:not(.adopted)')
+                await root.$('table td a.ygtvspacer')
             );
             // await page.waitFor(root_path + ' .ygtvchildren div.ygtvitem');
             await page.waitFor(2000);
@@ -117,14 +113,13 @@ async function open_tree({page, root, root_id, cat_id=null}) {
         var child_id;
         for (let child of children) {
             child_id = await save_disease(page, child, root_id, cat_id)
-            if (child_id) {
-                open_tree({
+            if (child_id != null) {
+                await open_tree({
                     page:page,
                     root:child,
                     root_id:child_id,
                     cat_id:cat_id
                 });
-                
             }
         }
     }
@@ -149,20 +144,21 @@ async function get_label(page, label) {
 
 async function save_disease(page, label, id_el, cat_id) {
     var sub_label = await label.$('table .ygtvcontent a.ygtvlabel:not(.adopted)');
-    if (sub_label) {
-        var id_el = (await page.evaluate(el => el ? el.innerText : '', await sub_label.$('.icode'))).trim();
-        var result = await get_label(page, sub_label);
-        if (id_el) {
-            diseases['data'][id_el] = {
-                'title': result,
-                'theCode': id_el,
-                'chapter': cat_id
-            };
-            diseases['count'] = Object.keys(diseases['data']).length;
-        }
-        return result;
+    if (sub_label == null) {
+        return false;
     }
-    return null;
+    var id_el = (await page.evaluate(el => el ? el.innerText : '', await sub_label.$('.icode'))).trim();
+    var result = await get_label(page, sub_label);
+    if (id_el) {
+        diseases['data'][id_el] = {
+            'title': result,
+            'theCode': id_el,
+            'chapter': cat_id
+        };
+        diseases['count'] = Object.keys(diseases['data']).length;
+        
+    }
+    return result
 }
 
 async function save_categories(page, label, id_el) {
@@ -183,6 +179,7 @@ async function process_category(page, category_el) {
         root_id:id_el,
         cat_id:id_el
     });
+        
     if (diseases['captured'].indexOf(id_el) == -1) {
         diseases['captured'].push(id_el);
     } else {
