@@ -86,7 +86,7 @@ async function saveDataAsJSON(data, filename) {
 
 async function open_tree({page, root, root_id, cat_id=null}) {
     var label_txt = await get_label(page, root);
-    console.log("Item " + Object.keys(diseases['data']).length + " ===> Tree -> " + label_txt);
+    console.log("Cat IS: " +  cat_id +  "Item " + Object.keys(diseases['data']).length + " ===> Tree -> " + label_txt);
     var has_dropdown = await page.evaluate(
         el => el ? true : false,
         await root.$('table td a.ygtvspacer')
